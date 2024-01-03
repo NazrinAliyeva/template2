@@ -116,7 +116,7 @@ text-align: center;
     @include responsive(smartphone-portrait) {
         box-shadow:  0px;
         width: 300px;
-        margin-left: 10px;
+        margin-left: 50px;
         padding: 10px 20px;
         text-align: center;
             display: flex;
@@ -128,7 +128,7 @@ text-align: center;
     @include responsive(tablet) {
         box-shadow:  0px;
         width: 400px;
-        margin-left: 300px;
+        margin-left: 200px;
         padding: 10px 20px;
         text-align: center;
             display: flex;
@@ -175,7 +175,7 @@ text-align: center;
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    margin-left: 10px;
+                    margin-left: 20px;
                 }
                 @include responsive(tablet) {
                     display: flex;
@@ -296,6 +296,7 @@ text-align: center;
         @include responsive(smartphone-portrait) {
 padding: 20px 0;
 width: 500px;
+        }
        
                 }     
                 @include responsive(tablet) {
@@ -307,7 +308,16 @@ width: 500px;
                       width: 500px;
                     
                     }
-                }
+                    @include responsive(tablet) {
+                        width: 500px;
+                    
+                    }
+                    @include responsive(smartphone-portrait) {
+                        width: 400px;
+                        padding-left: 100px;
+                                }
+                    
+                            }
         .footer-item-wrapper{
 display: flex;
 align-items: center;
@@ -318,7 +328,14 @@ align-items: center;
 gap: 230px;
   
   }
+  @include responsive(smartphone-portrait) {
+    display: flex;
+margin-left: 100px;
+align-items: center;
+gap: 30px;
+  
+  }
         }
-    }
+    
 }
 

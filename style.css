@@ -202,7 +202,7 @@
   .hero .hero-wrapper .wrapper {
     box-shadow: 0px;
     width: 300px;
-    margin-left: 10px;
+    margin-left: 50px;
     padding: 10px 20px;
     text-align: center;
     display: flex;
@@ -215,7 +215,7 @@
   .hero .hero-wrapper .wrapper {
     box-shadow: 0px;
     width: 400px;
-    margin-left: 300px;
+    margin-left: 200px;
     padding: 10px 20px;
     text-align: center;
     display: flex;
@@ -301,7 +301,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 10px;
+    margin-left: 20px;
   }
 }
 @media only screen and (min-width: 767.99px) and (max-width: 1199.97px) {
@@ -469,6 +469,12 @@
       the breakpoints I used were inspired by Bootstrap =>
       https://getbootstrap.com/docs/5.0/layout/breakpoints/
   */
+  /*
+      breakpoints are viewport arbitrary values,
+      they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+      the breakpoints I used were inspired by Bootstrap =>
+      https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  */
 }
 @media only screen and (max-width: 575.98px) {
   .wrapper {
@@ -493,12 +499,6 @@
       the breakpoints I used were inspired by Bootstrap =>
       https://getbootstrap.com/docs/5.0/layout/breakpoints/
   */
-  /*
-      breakpoints are viewport arbitrary values,
-      they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
-      the breakpoints I used were inspired by Bootstrap =>
-      https://getbootstrap.com/docs/5.0/layout/breakpoints/
-  */
 }
 @media only screen and (max-width: 575.98px) {
   .wrapper .wrapper-item {
@@ -507,11 +507,23 @@
   }
 }
 @media only screen and (min-width: 767.99px) and (max-width: 1199.97px) {
-  .wrapper .wrapper-item {
+  .wrapper {
     padding: 20px 0;
   }
 }
-.wrapper .wrapper-item .card-img {
+.wrapper .card-img {
+  /*
+      breakpoints are viewport arbitrary values,
+      they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+      the breakpoints I used were inspired by Bootstrap =>
+      https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  */
+  /*
+      breakpoints are viewport arbitrary values,
+      they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+      the breakpoints I used were inspired by Bootstrap =>
+      https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  */
   /*
       breakpoints are viewport arbitrary values,
       they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
@@ -520,11 +532,22 @@
   */
 }
 @media only screen and (min-width: 767.99px) and (max-width: 1199.97px) {
-  .wrapper .wrapper-item .card-img {
+  .wrapper .card-img {
     width: 500px;
   }
 }
-.wrapper .wrapper-item .footer-item-wrapper {
+@media only screen and (min-width: 767.99px) and (max-width: 1199.97px) {
+  .wrapper .card-img {
+    width: 500px;
+  }
+}
+@media only screen and (max-width: 575.98px) {
+  .wrapper .card-img {
+    width: 400px;
+    padding-left: 100px;
+  }
+}
+.wrapper .footer-item-wrapper {
   display: flex;
   align-items: center;
   gap: 50px;
@@ -534,11 +557,25 @@
       the breakpoints I used were inspired by Bootstrap =>
       https://getbootstrap.com/docs/5.0/layout/breakpoints/
   */
+  /*
+      breakpoints are viewport arbitrary values,
+      they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+      the breakpoints I used were inspired by Bootstrap =>
+      https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  */
 }
 @media only screen and (min-width: 767.99px) and (max-width: 1199.97px) {
-  .wrapper .wrapper-item .footer-item-wrapper {
+  .wrapper .footer-item-wrapper {
     display: flex;
     align-items: center;
     gap: 230px;
+  }
+}
+@media only screen and (max-width: 575.98px) {
+  .wrapper .footer-item-wrapper {
+    display: flex;
+    margin-left: 100px;
+    align-items: center;
+    gap: 30px;
   }
 }/*# sourceMappingURL=style.css.map */
