@@ -1,0 +1,324 @@
+@import 'responsive.scss';
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.dark-text{
+    color: #202142;
+    font-size: 20px;
+    font-weight: 500;
+}
+.light-text{
+    color: #6a6a6a;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+.header{
+    padding: 20px 30px;
+.nav-wrapper{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+.nav-item{
+    .active{
+        border-radius: 30px;
+    background-color: #F1F1FD;
+    color:#202142;
+    border-width: 10px;
+    @include responsive(smartphone-portrait) {
+    background-color:white;
+    color:#202142;
+    border-width: 0;
+    width: 0;
+ width: 100px;
+    margin-top: 20px;
+    }@include responsive(tablet) {
+        background-color:white;
+        color:#202142;
+        border-width: 0;
+        width: 0;
+     width: 100px;
+        margin-top: 20px;
+    }
+
+    }
+
+}
+
+.header-btn-wrapper{
+    margin-left: 150px;
+    display: flex;
+    gap: 0;
+    @include responsive(smartphone-portrait) {
+        margin-left:0px;
+        display: flex;
+        gap: 0;
+    }
+    @include responsive(tablet) {
+        margin-left:0px;
+        display: flex;
+        gap: 0;
+    }
+    .transparent-btn{
+        border: none;
+background: none;
+color:#202142;
+font-size: 16px;
+font-weight: 400px;
+padding-right: 20px;
+    }
+    .darkBlue-btn{
+background-color:#202142;
+color: #fff;
+padding: 10px 20px;
+border-radius: 20px;
+    }
+}
+}
+}
+.hero{
+    background: #FCFCFF;
+    padding: 50px 20px;
+    @include responsive(smartphone-portrait) {
+        background: #FCFCFF;
+        padding: 50px 0px;
+    }
+    @include responsive(tablet) {
+        background: #FCFCFF;
+        padding: 70px 0px;
+    }
+.hero-wrapper{
+    text-align: center;
+    .title{
+        color: #202142;
+        font-weight: 700;
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+    .subtitle{
+        color: #202142;
+        font-size: 20px;
+        font-weight: 400;
+        padding-bottom: 20px;
+    }
+.wrapper{
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+width: 500px;
+margin-left: 500px;
+padding: 10px 20px;
+text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    @include responsive(smartphone-portrait) {
+        box-shadow:  0px;
+        width: 300px;
+        margin-left: 10px;
+        padding: 10px 20px;
+        text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+       
+            gap: 30px;
+    }
+    @include responsive(tablet) {
+        box-shadow:  0px;
+        width: 400px;
+        margin-left: 300px;
+        padding: 10px 20px;
+        text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+       
+            gap: 30px; 
+    }
+    @include responsive(laptop) {
+        box-shadow:  0px;
+        width: 300px;
+        margin-left: 200px;
+        padding: 10px 20px;
+        text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+       
+            gap: 30px; 
+    }
+    .selection-wrapper{
+        border-right:2px grey solid ;
+        padding-right: 10px;
+        @include responsive(smartphone-portrait) {
+            border-right:0 ;
+            padding-right: 0px;
+        }
+        @include responsive(tablet) {
+            border-right:0 ;
+            padding-right: 0px;
+        }
+        @include responsive(laptop) {
+            border-right:0 ;
+            padding-right: 0px;
+        }
+        .selects{
+            border: none;
+            padding-right: 20px;
+            font-size: 20px;
+        }
+            }
+            .search-bar{
+                @include responsive(smartphone-portrait) {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-left: 10px;
+                }
+                @include responsive(tablet) {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-left: 10px;
+                }
+                .search-input{
+                border: none;
+                font-size: 20px;
+                @include responsive(smartphone-portrait) {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-left: 30px;
+    background: #FCFCFF;
+   width: 200px;
+                }
+                @include responsive(tablet) {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-left: 30px;
+    background: #FCFCFF;
+   width: 200px;
+                }
+
+                }
+                
+            }
+}
+}
+}
+
+.text-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+            .dark-text{
+            display: inline;
+            background: #fff;
+            border-radius: 50%;
+            padding: 10px;
+            border: 1px solid #d7d7f9;
+            @extend .dark-text;
+        }
+        .light-text{
+            @extend .light-text;
+        }
+}
+.items-wrapper{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include responsive(smartphone-portrait) {
+        display: flex;
+   flex-direction: column;
+    }
+    @include responsive(tablet) {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .mode-wrapper{
+        .mode{
+            @include responsive(smartphone-portrait) {
+                height: 110px;
+                width: 400px;
+                    } 
+                    @include responsive(tablet) {
+                        height: 110px;
+                        width: 400px;    
+                    }
+        }
+
+    }
+    .logo-wrapper{
+        display: flex;
+        .logo{
+            @include responsive(smartphone-portrait) {
+                display: flex;
+       margin-left: 10px;
+                    height: 150px;
+                    width: 50px;
+                        } 
+                        @include responsive(tablet) {
+                            display: flex;
+                            justify-content: space-between;
+                            margin-left: 30px;
+                                         height: 150px;
+                                         width: 100px;  
+                        }
+            }
+        }
+
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include responsive(smartphone-portrait) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+   
+            } 
+            @include responsive(tablet) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            
+            }
+    .wrapper-item{
+
+        @include responsive(smartphone-portrait) {
+padding: 20px 0;
+width: 500px;
+       
+                }     
+                @include responsive(tablet) {
+                    padding: 20px 0;
+                
+                }
+                .card-img{
+                    @include responsive(tablet) {
+                      width: 500px;
+                    
+                    }
+                }
+        .footer-item-wrapper{
+display: flex;
+align-items: center;
+gap: 50px;
+@include responsive(tablet) {
+    display: flex;
+align-items: center;
+gap: 230px;
+  
+  }
+        }
+    }
+}
+
